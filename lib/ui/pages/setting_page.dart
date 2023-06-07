@@ -32,7 +32,7 @@ class SettingPage extends StatelessWidget {
         }
         return Center(
           child: CustomButton(
-            title: 'Sign Out',
+            title: 'Keluar',
             onPressed: () {
               context.read<AuthCubit>().signOut();
             },
