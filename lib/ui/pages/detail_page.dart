@@ -142,7 +142,7 @@ class DetailPage extends StatelessWidget {
                 children: [
                   // NOTE: ABOUT
                   Text(
-                    'About',
+                    'Deskripsi',
                     style: blackTextStyle.copyWith(
                       fontSize: 16,
                       fontWeight: bold,
@@ -161,7 +161,7 @@ class DetailPage extends StatelessWidget {
                     height: 20,
                   ),
                   Text(
-                    'Photos',
+                    'Foto',
                     style: blackTextStyle.copyWith(
                       fontSize: 16,
                       fontWeight: bold,
@@ -181,7 +181,7 @@ class DetailPage extends StatelessWidget {
                     height: 20,
                   ),
                   Text(
-                    'Interest',
+                    'Tempat menarik',
                     style: blackTextStyle.copyWith(
                       fontSize: 16,
                       fontWeight: semiBold,
@@ -246,7 +246,7 @@ class DetailPage extends StatelessWidget {
 
                   // NOTE: BOOK BUTTON
                   CustomButton(
-                    title: 'Book Now',
+                    title: 'Booking',
                     onPressed: () {
                       Navigator.push(
                         context,

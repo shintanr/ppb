@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Howdy,\n${state.user.name}',
+                          'Halo,\n${state.user.name}',
                           style: blackTextStyle.copyWith(
                             fontSize: 24,
                             fontWeight: semiBold,
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                           height: 6,
                         ),
                         Text(
-                          'Where to fly today?',
+                          'Liburan ke mana nih?',
                           style: greyTextStyle.copyWith(
                             fontSize: 16,
                             fontWeight: light,
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'New This Year',
+              'Rekomendasi',
               style: blackTextStyle.copyWith(
                 fontSize: 18,
                 fontWeight: semiBold,
