@@ -38,7 +38,7 @@ class BonusPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Name',
+                            'Nama',
                             style: whiteTextStyle.copyWith(
                               fontWeight: light,
                             ),
@@ -78,7 +78,7 @@ class BonusPage extends StatelessWidget {
                   height: 41,
                 ),
                 Text(
-                  'Balance',
+                  'Saldo',
                   style: whiteTextStyle.copyWith(
                     fontSize: 14,
                     fontWeight: light,
