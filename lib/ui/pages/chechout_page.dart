@@ -166,7 +166,7 @@ class CheckoutPage extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: 20),
               child: Text(
-                'Booking Details',
+                'Detail Booking',
                 style: blackTextStyle.copyWith(
                   fontSize: 16,
                   fontWeight: semiBold,
@@ -176,23 +176,23 @@ class CheckoutPage extends StatelessWidget {
 
             //NOTE: BOOKING DETAIL ITEM
             BookingDetailsItem(
-              title: 'Traveler',
+              title: 'Penumpang',
               valueText: '${transaction.amountOfTraveler} person',
               valueColor: kBlackColor,
             ),
             BookingDetailsItem(
-              title: 'Seat',
+              title: 'Tempat duduk',
               valueText: transaction.selectedSeats,
               valueColor: kBlackColor,
             ),
             BookingDetailsItem(
-              title: 'Insurance',
-              valueText: transaction.insurance ? 'YES' : 'NO',
+              title: 'Asuransi',
+              valueText: transaction.insurance ? 'YA' : 'TIDAK',
               valueColor: transaction.insurance ? kGreenColor : kRedColor,
             ),
             BookingDetailsItem(
               title: 'Refundable',
-              valueText: transaction.refundable ? 'YES' : 'NO',
+              valueText: transaction.refundable ? 'YA' : 'TIDAK',
               valueColor: transaction.refundable ? kGreenColor : kRedColor,
             ),
             BookingDetailsItem(
@@ -201,7 +201,7 @@ class CheckoutPage extends StatelessWidget {
               valueColor: kBlackColor,
             ),
             BookingDetailsItem(
-              title: 'Price',
+              title: 'Harga',
               valueText: NumberFormat.currency(
                 locale: 'id',
                 symbol: 'IDR ',
@@ -210,7 +210,7 @@ class CheckoutPage extends StatelessWidget {
               valueColor: kBlackColor,
             ),
             BookingDetailsItem(
-              title: 'Grand Total',
+              title: 'Total',
               valueText: NumberFormat.currency(
                 locale: 'id',
                 symbol: 'IDR ',
@@ -243,7 +243,7 @@ class CheckoutPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Payment Details',
+                    'Detail Pembayaran',
                     style: blackTextStyle.copyWith(
                       fontSize: 16,
                       fontWeight: semiBold,
@@ -355,7 +355,7 @@ class CheckoutPage extends StatelessWidget {
             );
           }
           return CustomButton(
-            title: 'Pay Now',
+            title: 'Bayar sekarang',
             onPressed: () {
               context.read<TransactionCubit>().createTransaction(transaction);
             },
@@ -373,7 +373,7 @@ class CheckoutPage extends StatelessWidget {
           bottom: 30,
         ),
         child: Text(
-          'Terms and Conditions',
+          'Syarat dan Ketentuan',
           style: greyTextStyle.copyWith(
             fontSize: 16,
             fontWeight: light,
