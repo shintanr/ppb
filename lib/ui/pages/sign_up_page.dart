@@ -32,16 +32,16 @@ class SignUpPage extends StatelessWidget {
     Widget inputSection() {
       Widget nameInput() {
         return CustomTextFormField(
-          title: 'Full Name',
-          hintText: 'Your full name',
+          title: 'Nama',
+          hintText: 'nama anda',
           controller: nameController,
         );
       }
 
       Widget emailInput() {
         return CustomTextFormField(
-          title: 'Email Address',
-          hintText: 'Your email address',
+          title: 'Alamat Email',
+          hintText: 'email anda',
           controller: emailController,
         );
       }
@@ -49,7 +49,7 @@ class SignUpPage extends StatelessWidget {
       Widget passwordInput() {
         return CustomTextFormField(
           title: 'Password',
-          hintText: 'Your password',
+          hintText: 'password anda',
           controller: passwordController,
           obscureText: true,
         );
@@ -57,8 +57,8 @@ class SignUpPage extends StatelessWidget {
 
       Widget hobbyInput() {
         return CustomTextFormField(
-          title: 'Hobby',
-          hintText: 'Your hobby',
+          title: 'Hobi',
+          hintText: 'hobi anda',
           controller: hobbyController,
         );
       }
@@ -129,7 +129,7 @@ class SignUpPage extends StatelessWidget {
           alignment: Alignment.center,
           margin: EdgeInsets.only(top: 50, bottom: 73),
           child: Text(
-            'Have an account? Sign in',
+            'Sudah punya akun? Sign in',
             style: greyTextStyle.copyWith(
               fontSize: 16,
               fontWeight: light,
