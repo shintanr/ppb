@@ -20,7 +20,7 @@ class ChooseSeatPage extends StatelessWidget {
       return Container(
         margin: EdgeInsets.only(top: 30),
         child: Text(
-          'Select Your\nFavorite Seat',
+          'Pilih tempat duduk\nfavorit Anda',
           style: blackTextStyle.copyWith(
             fontSize: 24,
             fontWeight: semiBold,
@@ -48,7 +48,7 @@ class ChooseSeatPage extends StatelessWidget {
               ),
             ),
             Text(
-              'Available',
+              'Tersedia',
               style: blackTextStyle,
             ),
             //NOTE UNAVAILABLE
@@ -65,7 +65,7 @@ class ChooseSeatPage extends StatelessWidget {
               ),
             ),
             Text(
-              'Selected',
+              'Dipilih',
               style: blackTextStyle,
             ),
             //NOTE AVAILABLE
@@ -82,7 +82,7 @@ class ChooseSeatPage extends StatelessWidget {
               ),
             ),
             Text(
-              'Unvailable',
+              'Tidak tersedia',
               style: blackTextStyle,
             )
           ],
@@ -341,7 +341,7 @@ class ChooseSeatPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Your seat',
+                        'Tempat duduk Anda',
                         style: greyTextStyle.copyWith(
                           fontWeight: light,
                         ),
@@ -364,7 +364,7 @@ class ChooseSeatPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Total',
+                        'Jumlah',
                         style: greyTextStyle.copyWith(
                           fontWeight: light,
                         ),
@@ -394,7 +394,7 @@ class ChooseSeatPage extends StatelessWidget {
       return BlocBuilder<SeatCubit, List<String>>(
         builder: (context, state) {
           return CustomButton(
-            title: 'Continue to Checkout',
+            title: 'Checkout',
             onPressed: () {
               int price = destination.price * state.length;
 

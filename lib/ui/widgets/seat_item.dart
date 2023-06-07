@@ -46,7 +46,7 @@ class SeatItem extends StatelessWidget {
       if (isSelected) {
         return Center(
           child: Text(
-            'YOU',
+            'Anda',
             style: whiteTextStyle.copyWith(
               fontWeight: semiBold,
             ),
