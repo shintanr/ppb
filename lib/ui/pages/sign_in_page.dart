@@ -31,8 +31,8 @@ class SignInPage extends StatelessWidget {
     Widget inputSection() {
       Widget emailInput() {
         return CustomTextFormField(
-          title: 'Email Address',
-          hintText: 'Your email address',
+          title: 'Alamat email',
+          hintText: 'email anda',
           controller: emailController,
         );
       }
@@ -40,7 +40,7 @@ class SignInPage extends StatelessWidget {
       Widget passwordInput() {
         return CustomTextFormField(
           title: 'Password',
-          hintText: 'Your password',
+          hintText: 'password anda',
           controller: passwordController,
           obscureText: true,
         );
@@ -68,7 +68,7 @@ class SignInPage extends StatelessWidget {
               );
             }
             return CustomButton(
-                title: 'Sign In',
+                title: 'Masuk',
                 onPressed: () {
                   context.read<AuthCubit>().signIn(
                         email: emailController.text,
@@ -108,7 +108,7 @@ class SignInPage extends StatelessWidget {
           alignment: Alignment.center,
           margin: EdgeInsets.only(top: 50, bottom: 73),
           child: Text(
-            'Don\'t have an account? Sign Up',
+            'Belum punya akun? Daftar',
             style: greyTextStyle.copyWith(
               fontSize: 16,
               fontWeight: light,

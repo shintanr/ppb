@@ -85,7 +85,7 @@ class SignUpPage extends StatelessWidget {
               );
             }
             return CustomButton(
-                title: 'Get Started',
+                title: 'Daftar',
                 onPressed: () {
                   context.read<AuthCubit>().signUp(
                         email: emailController.text,
@@ -129,7 +129,7 @@ class SignUpPage extends StatelessWidget {
           alignment: Alignment.center,
           margin: EdgeInsets.only(top: 50, bottom: 73),
           child: Text(
-            'Sudah punya akun? Sign in',
+            'Sudah punya akun? Masuk',
             style: greyTextStyle.copyWith(
               fontSize: 16,
               fontWeight: light,
